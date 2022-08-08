@@ -19,9 +19,9 @@ body{
 }
 .bgcolor {
     width: 200px;
-    background-color: blue;
+    background-image: linear-gradient(45deg, #c10909	, #FFA07A	);
     border-radius: 20px;
-    border: 2px dashed black;
+    border: 4px dashed black;
     padding: 10px;
     text-align: center;
 
@@ -34,7 +34,8 @@ body{
 }
 .btn {
     font-weight: bold;
-    background-color: blue;
+    /* background-color: blue; */
+    background-image: linear-gradient(45deg, #c10909	, #FFA07A	);
     padding: 10px;
     border-radius: 12px;
     color: white;
