@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   
+    font-family: 'Mouse Memoirs', sans-serif;
+
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgcolor {
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    border: 2px dashed black;
+    padding: 10px;
+}
+.color {
+    display: block;
+}
+.heading {
+    color: whitesmoke;
+}
+.btn {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+}
+
+.btncotainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
