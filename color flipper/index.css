@@ -23,6 +23,8 @@ body{
     border-radius: 20px;
     border: 2px dashed black;
     padding: 10px;
+    text-align: center;
+
 }
 .color {
     display: block;
@@ -31,10 +33,12 @@ body{
     color: whitesmoke;
 }
 .btn {
+    font-weight: bold;
     background-color: blue;
     padding: 10px;
     border-radius: 12px;
     color: white;
+    font-size: 14px;
 }
 
 .btncotainer {

@@ -12,15 +12,17 @@ function colorCode() {
     let hexcode = "#" + randomNum.toString(16);
     document.body.style.backgroundColor = hexcode;
     colors.innerText = hexcode;
-    copyBtn.addEventListener("click", () => {
-        navigator.clipboard.writeText(hexcode)
-
-    })
+    
 
 }
 
 
 genBtn.addEventListener("click", colorCode)
+
+copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(hexcode)
+
+})
 
 // function clipCopy(){
 //     // navigator.clipboard.writeText(hexcode)
