@@ -1,7 +1,5 @@
 //selectors
 
-// let genBtn = document.getElementsByClassName("gen");
-// let copybtn = document.getElementsByClassName("copy")
 let colors = document.querySelector(".color_c")
 let genBtn = document.querySelector(".gen")
 let copyBtn = document.querySelector(".copy")
@@ -14,13 +12,13 @@ function colorCode() {
     let hexcode = "#" + randomNum.toString(16);
     document.body.style.backgroundColor = hexcode;
     colors.innerText = hexcode;
-
-    copyBtn.addEventListener("click", ()=>{
+    copyBtn.addEventListener("click", () => {
         navigator.clipboard.writeText(hexcode)
 
     })
 
 }
+
 
 genBtn.addEventListener("click", colorCode)
 
@@ -29,5 +27,6 @@ genBtn.addEventListener("click", colorCode)
 //     genBtn.select()
 //     // document.execCommand("copy")
 // }
+
 
 
