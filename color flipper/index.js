@@ -9,12 +9,25 @@ let copyBtn = document.querySelector(".copy")
 
 //function
 
-function colorCode(){
-    let randomNum = Math.floor(Math.random() * 16777215 )
+function colorCode() {
+    let randomNum = Math.floor(Math.random() * 16777215)
     let hexcode = "#" + randomNum.toString(16);
     document.body.style.backgroundColor = hexcode;
     colors.innerText = hexcode;
+
+    copyBtn.addEventListener("click", ()=>{
+        navigator.clipboard.writeText(hexcode)
+
+    })
+
 }
 
 genBtn.addEventListener("click", colorCode)
+
+// function clipCopy(){
+//     // navigator.clipboard.writeText(hexcode)
+//     genBtn.select()
+//     // document.execCommand("copy")
+// }
+
 
