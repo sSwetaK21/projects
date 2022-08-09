@@ -24,11 +24,5 @@ copyBtn.addEventListener("click", () => {
 
 })
 
-// function clipCopy(){
-//     // navigator.clipboard.writeText(hexcode)
-//     genBtn.select()
-//     // document.execCommand("copy")
-// }
-
 
 

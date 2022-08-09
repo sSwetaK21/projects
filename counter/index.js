@@ -22,7 +22,7 @@ buttons.forEach(function (btn){
         }
 
         if(count > 0){
-            value.style.color = "green"
+            value.style.color = "lime"
         }
         if(count < 0){
             value.style.color = "red"
