@@ -19,10 +19,10 @@ function colorCode() {
 
 genBtn.addEventListener("click", colorCode)
 
-copyBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText(hexcode)
+// copyBtn.addEventListener("click", () => {
+//     navigator.clipboard.writeText(hexcode)
 
-})
+// })
 
 
 
