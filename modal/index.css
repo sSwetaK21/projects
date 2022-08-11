@@ -60,7 +60,7 @@ body{
 }
 .modal_content{
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: 15px;
 
     width: 500px;
     margin: 200px auto;
@@ -95,4 +95,7 @@ ul {
 li {
     margin: 9px;
     font-size: 20px;
+}
+.modal_body {
+    padding: 10px;
 }
