@@ -1,0 +1,143 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 4px;
+    background-color: #7e54b5;
+}
+
+
+
+
+.navbar {
+    grid-template-columns: 2fr 1fr;
+    display: grid;
+    background-color: #7e54b5;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+.leftbar {
+    display: flex;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    /* float: left; */
+    border: 2px solid white;
+    padding: 2px;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+li {
+    width: 35px;
+    margin: 5px;
+    border-radius: 5px;
+}  
+
+ .all {
+    border: 1px solid white;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+}
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black{
+    background-color: black;
+}
+
+.btn {
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+.container{
+    margin: 10px;
+    width: 100%;
+}
+
+.modal_content {
+    width: 265px;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 20px; */
+    border: 2px solid black;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    background-color: #7e54b5;
+
+}
+
+.colorsbtn {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.closebtn {
+    width: 15px;
+    height: 18px;
+    margin: 2px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.colorsbtn button {
+    margin: 2px;
+    width: 50px;
+    height: 35px;
+}
+
+.submitbtn {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.modal_content input[type="text"]{
+    width: 170px;
+    height: 160px;
+    background-color: #7e54b5;
+    outline: none;
+    border: none;
+    padding: 3px;
+    color: white;
+
+}
+
+.modal_content input::placeholder{
+    color: white;
+}
+.modal_content input:focus{
+    border: none;
+    outline: none;
+}
