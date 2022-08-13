@@ -15,6 +15,9 @@ createBtn.addEventListener("click", function () {
     let txtarea = document.createElement("textarea");
     txtarea.classList.add("txtarea")
     txtarea.setAttribute("placeholder", "Enter task here")
+    txtarea.style.backgroundColor ="#7e54b5"
+    txtarea.style.outline = "none"
+    txtarea.style.color = "white"
 
     let colorsbtn = document.createElement("div");
     colorsbtn.classList.add("colorsbtn")
@@ -58,24 +61,28 @@ createBtn.addEventListener("click", function () {
     redbtn.addEventListener("click", function () {
         modal_content.style.backgroundColor = "red"
         txtarea.style.backgroundColor = "red"
+        txtarea.style.outline = "none"
 
     })
 
     greenbtn.addEventListener("click", function () {
         modal_content.style.backgroundColor = "green"
         txtarea.style.backgroundColor = "green"
+        txtarea.style.outline = "none"
 
     })
 
     bluebtn.addEventListener("click", function () {
         modal_content.style.backgroundColor = "blue"
         txtarea.style.backgroundColor = "blue"
+        txtarea.style.outline = "none"
 
     })
 
     blackbtn.addEventListener("click", function () {
         modal_content.style.backgroundColor = "black"
         txtarea.style.backgroundColor = "black"
+        txtarea.style.outline = "none"
 
     })
 
@@ -112,7 +119,8 @@ createBtn.addEventListener("click", function () {
             txtarea1.setAttribute("rows", "5")
             txtarea1.setAttribute("width", "270px")
             txtarea1.setAttribute("height", "140px")
-
+            txtarea1.style.backgroundColor ="#7e54b5"
+            txtarea1.style.outline = "none"
 
 
             
@@ -146,6 +154,7 @@ createBtn.addEventListener("click", function () {
             let colors = document.createElement("div")
             colors.classList.add("colors")
             colors.style.display = "none"
+            colors.style.backgroundColor="red"
 
 
             let rightIcon = document.createElement("div")
@@ -162,11 +171,7 @@ createBtn.addEventListener("click", function () {
             toggleLock.addEventListener("click", function (){
                 this.replaceWith(toggleUnlock)
                 txtarea1.setAttribute("readonly", "readonly")
-                // checked.style.display = "none"
-                // editBTn.style.display = "none"
-                // trash.style.display = "none"
-                // colors.style.display = "none"
-
+               
                    checked.style.display = "block"
                 editBTn.style.display = "block"
                 trash.style.display = "block"
@@ -175,10 +180,7 @@ createBtn.addEventListener("click", function () {
 
             toggleUnlock.addEventListener("click", function (){
                 this.replaceWith(toggleLock)
-                // checked.style.display = "block"
-                // editBTn.style.display = "block"
-                // trash.style.display = "block"
-                // colors.style.display = "block"
+              
                 checked.style.display = "none"
                 editBTn.style.display = "none"
                 trash.style.display = "none"
@@ -192,11 +194,36 @@ createBtn.addEventListener("click", function () {
             
             editBTn.addEventListener("click", function (){
                 txtarea1.removeAttribute("readonly")
+                txtarea1.style.color = "white"
+
             })
 
             trash.addEventListener("click", function (){
                 modal_sub.remove()
             })
+
+            colors.addEventListener("click", function (){
+                if(colors.style.backgroundColor =="red"){
+                    colors.style.backgroundColor="green"
+                    modal_sub.style.backgroundColor="green"
+                } else if(colors.style.backgroundColor =="green"){
+                    colors.style.backgroundColor="blue"
+                    modal_sub.style.backgroundColor="blue"
+                } else if(colors.style.backgroundColor =="blue"){
+                    colors.style.backgroundColor="black"
+                    modal_sub.style.backgroundColor="black"
+                    toggleUnlock.style.color = "white"
+                    toggleLock.style.color = "white"
+
+                } else{
+                    colors.style.backgroundColor="red"
+                    modal_sub.style.backgroundColor="red"
+                }
+            })
+
+          
+
+
 
             cont.append(modal_sub)   
             modal_sub.append(txtarea1)
@@ -221,6 +248,41 @@ createBtn.addEventListener("click", function () {
 
 
     })
+
+
+      red.addEventListener("click", function (){
+                if(colors.style.backgroundColor =="red"){
+                    // let redbox = document.createElement("div")
+                    // redbox.classList.add("redbox")
+                    // redbox.append(modal_sub)
+                    modal_sub.style.visibility = "none"
+                } else{
+                    modal_sub.style.visibility = "hidden"
+                }
+                
+            })
+
+            green.addEventListener("click", function (){
+                if(colors.style.backgroundColor =="green"){
+                    cont.append(modal_sub)
+                    modal_sub.style.display = "block"
+
+                } else{
+                    cont.style.display = "none"
+                }
+            })
+
+            blue.addEventListener("click", function (){
+                if(colors.style.backgroundColor =="blue"){
+                    cont.append(modal_sub)
+                } 
+            })
+
+            black.addEventListener("click", function (){
+                if(colors.style.backgroundColor =="black"){
+                    cont.append(modal_sub)
+                } 
+            })
 
 })
 
