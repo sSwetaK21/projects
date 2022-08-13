@@ -7,14 +7,14 @@
 
 body{
     font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+
 }
 
 header {
     padding: 4px;
     background-color: #7e54b5;
 }
-
-
 
 
 .navbar {
@@ -37,7 +37,7 @@ ul {
     /* float: left; */
     background-color: white;
     border: 2px solid white;
-    padding: 2px 7px;
+    /* padding: 2px 7px; */
     display: flex;
     border-radius: 5px;
 
@@ -48,6 +48,10 @@ li {
     margin: 5px;
     border-radius: 5px;
 }  
+li button {
+    width: 30px;
+    height: 25px;
+}
 
  .all {
     border: 1px solid black;
@@ -85,9 +89,8 @@ li {
 .modal_content {
     width: 265px;
     display: flex;
-    /* grid-template-columns: 1fr 1fr 20px; */
+    height: 200px;
     border: 2px solid black;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     background-color: #7e54b5;
 
@@ -107,12 +110,15 @@ li {
     border: none;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .colorsbtn button {
     margin: 2px;
     width: 50px;
     height: 35px;
+    border: 1px solid white;
+
 }
 
 .submitbtn {
@@ -123,21 +129,23 @@ li {
     margin: 0px 10px;
 }
 
-/* .modal_content input[type="text"]{
-    width: 170px;
-    height: 160px;
-    background-color: #7e54b5;
-    outline: none;
-    border: none;
+.bottoms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+    margin: 10px;
+
+}
+
+
+
+.leftIcon i {
     padding: 3px;
-    color: white;
-
 }
 
-.modal_content input::placeholder{
-    color: white;
+.colors {
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
 }
-.modal_content input:focus{
-    border: none;
-    outline: none;
-} */
