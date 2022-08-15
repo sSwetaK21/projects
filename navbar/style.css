@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* General */
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: black;
+
+}
+
+.d_flex {
+    display: flex;
+    
+}
+
+/* Header */
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+
+}
+header {
+    margin: 0px 70px;
+}
+
+.navbar {
+    min-width: 1080px;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 8px;
+
+}
+
+.logo {
+    font-size: 32px;
+}
+
+li {
+    margin: 4px;
+}
+
+.nav_li {
+    margin: 0px 8px;
+}
+
+.toggle {
+    display: none;
+}

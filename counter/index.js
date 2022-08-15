@@ -11,6 +11,7 @@ let buttons = document.querySelectorAll(".buttons")
 buttons.forEach(function (btn){
     btn.addEventListener("click", function (event) {
         let setvalue = event.target.classList;
+        
         if(setvalue.contains("Decrease")){
             count--;
         } 
