@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Courier New', Courier, monospace
+}
+
+.box {
+    margin: 10px;
+}
+
+.qst {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    background-color: powderblue;
+    cursor: pointer;
+}
+
+.qst::before{
+    position: absolute;
+    content: '+';
+    top: 7px;
+    font-size: 22px;
+    font-weight: bold;
+    right: 20px;
+
+}
+
+.answer {
+    position: relative;
+    background-color: #5bb0bb;
+    height: 0px;
+    overflow: hidden;
+}
+
+.box:active .qst::before{
+    content: '-';
+    /* position: absolute; */
+}
+
+.box:active .answer{
+    height: auto;
+    padding: 10px;
+}
