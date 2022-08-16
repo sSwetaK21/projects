@@ -19,10 +19,8 @@ all.addEventListener("click", function (){
 })
 
 
-
-
 brkfst.addEventListener("click", function (){
-    brkfstBox.style.display = "inline-block";
+    brkfstBox.style.display = "block";
     lunchBox.style.display = "none"
     snacksBox.style.display = "none"
     dinnerBox.style.display = "none"
