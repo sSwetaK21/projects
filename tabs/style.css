@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.container {
+    width: 400px;
+}
+
+.buttons {
+    background-color: #0f78d3;
+    margin-top: 10px;
+}
+
+button.btn {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.about {
+    padding: 10px;
+    background-color: #d4e0eb;
+    border: 1px solid blue;
+    height: 400px;
+
+}
+
+button.btn:active{
+    background-color: #0f78d3;
+}
