@@ -11,16 +11,16 @@ let snacksBox =document.querySelector(".snacksBox")
 let dinnerBox =document.querySelector(".dinnerBox")
 
 all.addEventListener("click", function (){
-    brkfstBox.style.display = "inline-block";
-    lunchBox.style.display = "inline-block"
-    snacksBox.style.display = "inline-block"
-    dinnerBox.style.display = "inline-block"
+    brkfstBox.style.display = "flex";
+    lunchBox.style.display = "flex"
+    snacksBox.style.display = "flex"
+    dinnerBox.style.display = "flex"
 
 })
 
 
 brkfst.addEventListener("click", function (){
-    brkfstBox.style.display = "block";
+    brkfstBox.style.display = "flex";
     lunchBox.style.display = "none"
     snacksBox.style.display = "none"
     dinnerBox.style.display = "none"
@@ -29,7 +29,7 @@ brkfst.addEventListener("click", function (){
 
 lunch.addEventListener("click", function (){
     brkfstBox.style.display = "none";
-    lunchBox.style.display = "inline-block"
+    lunchBox.style.display = "flex"
     snacksBox.style.display = "none"
     dinnerBox.style.display = "none"
 })
@@ -37,7 +37,7 @@ lunch.addEventListener("click", function (){
 snacks.addEventListener("click", function (){
     brkfstBox.style.display = "none";
     lunchBox.style.display = "none"
-    snacksBox.style.display = "inline-block"
+    snacksBox.style.display = "flex"
     dinnerBox.style.display = "none"
 })
 
@@ -45,5 +45,5 @@ dinner.addEventListener("click", function (){
     brkfstBox.style.display = "none";
     lunchBox.style.display = "none"
     snacksBox.style.display = "none"
-    dinnerBox.style.display = "inline-block"
+    dinnerBox.style.display = "flex"
 })
