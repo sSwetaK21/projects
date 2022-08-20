@@ -46,7 +46,7 @@ body {
 
 }
 
-.answer {
+.box .answer {
     position: relative;
     background-color: #5bb0bb;
     height: 0px;
