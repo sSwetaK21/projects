@@ -41,10 +41,15 @@ span#computer_choice, span#user_choice {
     margin: 8px 0px;
 }
 
-.rock {
-    background-image: url(paper.png);
-    background-repeat: no-repeat;
+.stone_imgfluid {
+    background-color: #6dabab;
     width: 200px;
-    background-size: contain;
-    height: 300px;
+    outline: none;
+    border: none;
+}
+
+ .boxes {
+    border: none;
+    outline: none;
+    width: 0;
 }
