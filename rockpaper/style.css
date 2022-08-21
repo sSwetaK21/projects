@@ -14,7 +14,7 @@ body {
     margin: 2rem;
 }
 
-.box {
+/* .box { */
     /* display: flex;
     margin: 2em;
     width: 250px;
@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; */
-}
+/* } */
 
 .choices {
     display: flex;
