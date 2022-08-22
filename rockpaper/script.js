@@ -34,11 +34,11 @@ function generateComputerChoice(){
 
 function getResult(){
   if(comp === user){
-    res= "Its a Draw!!"
+    res= "Its a Draw!"
   }
 
   if(comp === "rock" && user==="paper"){
-    res = "You Win!"
+    res = "You Win! "
   }
 
   if(comp === "paper" && user === "scissors"){

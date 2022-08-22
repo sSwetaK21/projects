@@ -39,6 +39,7 @@ header {
 
 .imgs{
     width: 100px;
+    margin: 10px;
 
 }
 
@@ -46,4 +47,12 @@ header {
     height: 200px;
     display: flex;
     align-items: flex-end;
+}
+
+#result_display{
+    font-size: 3em;
+}
+
+.user_display, .comp_display{
+    font-size: 2em;
 }
