@@ -4,9 +4,15 @@
 }
 
 body {
-    background-color: #ddb2e1;
+    background-color: #869aa37d;
     margin: 2em;
+    overflow: hidden;
 
+}
+.title {
+    font-size: 2eem;
+    font-size: 3em;
+    color: #007a7a;
 }
 header {
     display: flex;
@@ -23,7 +29,11 @@ header {
 
 .result_div {
     width: 100%;
-    height: 150px;
+    height: 120px;
+    text-align: center;
+    color: #215661;
+
+
 }
 
 .icon{
@@ -35,11 +45,14 @@ header {
 .choices {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
+
 }
 
 .imgs{
-    width: 100px;
+    width: 150px;
     margin: 10px;
+    margin: 5em;
 
 }
 
@@ -47,6 +60,8 @@ header {
     height: 200px;
     display: flex;
     align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 #result_display{

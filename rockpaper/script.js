@@ -45,17 +45,17 @@ function getResult(){
     res = "You Win!"
   }
   if(comp === "rock" && user === "scissors"){
-    res = "You lose!"
+    res = "You Lose!"
   }
   if(comp === "paper" && user === "rock"){
     res = "You Lose!"
   }
 
   if(comp === "scissors" && user === "paper"){
-    res = "You lose!"
+    res = "You Lose!"
   }
   if(comp === "scissors" && user === "rock"){
-    res = "You win!"
+    res = "You Win!"
   }
 
   resDisplay.innerHTML = res
