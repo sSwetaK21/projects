@@ -12,63 +12,34 @@
 </head>
 
 <body>
+    <header>
+        <h2 class="title">Lets Play</h2>
+
+    </header>
     <main>
-        <section class="gameSection">
-            <div class="title_div">
-                <h2 class="title">Lets Play Rock, Paper & Scissors</h2>
-            </div>
+        <section class="title_section">
+            <div class="result_div">
 
-            <div class="result_box">
-                <h2 class="results">Results</h2>
-                <p id="result"></p>
+                <h2>Result: <span class="span_block"></span></h2>
             </div>
-
             <div class="choices">
-                <div class="comp box">
-                    <div class="comp_img">
-                        <i class="fa-solid fa-desktop"></i>
-                    </div>
-                    <h2>Computer Choice:
-                        <span id="computer_choice"></span>
-                    </h2>
+
+                <div class="computer">
+                    <i class="fa-solid fa-desktop icon"></i>
+                    <h2>Computer Choice: <span class="span_block"></span></h2>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-user icon"></i>
+                    <h2>User's Choice:<span class="span_block"></span></h2>
+                    <img src="paper-removebg-preview.png" class="paper_img imgs" alt="paper">
+                    <img src="stone-removebg-preview.png" class="stone_img imgs" alt="stone">
+                    <img src="scissors-removebg-preview.png" class="sccisors_img imgs" alt="scissors">
 
                 </div>
-
-                <div class="user box">
-                    <div class="user_img">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <h2>User Choice:
-                        <span id="user_choice"></span>
-                    </h2>
-
-                    <button class="rock boxes" id="rock">
-                        <img src="stone-removebg-preview.png" class="stone_imgfluid">
-                    </button>
-                    <button class="paper boxes" id="paper">
-                        <img src="paper-removebg-preview.png" class="stone_imgfluid">
-
-                    </button>
-                    <button class="scissors boxes"  id="scissors">
-                        <img src="scissors-removebg-preview.png" class="stone_imgfluid">
-
-                    </button>
-
-                </div>
-
-
             </div>
-
-            
-
-            <!-- <h2>Your Choice: <span id="user-choice"></span></h2>
-            <h2>Result: <span id="result"></span></h2>
-
-            <button id="rock">rock</button>
-            <button id="paper">paper</button>
-            <button id="scissors">scissors</button>  -->
 
         </section>
+
     </main>
 
     <script src="script.js"></script>

@@ -4,52 +4,40 @@
 }
 
 body {
-    background-color: #6dabab;
-}
-
-.title_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-
-/* .box { */
-    /* display: flex;
+    background-color: #ddb2e1;
     margin: 2em;
-    width: 250px;
-    height: 200px;
-    border: 1px solid black;
+
+}
+header {
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; */
-/* } */
+    margin: 6px auto;
+
+}
+
+.span_block {
+    display: block;
+    text-align: center;
+}
+
+.result_div {
+    width: 100%;
+    height: 150px;
+}
+
+.icon{
+    font-size: 5em;
+    margin-bottom: 7px;
+
+}
 
 .choices {
-    display: flex;
-    /* margin: 2em; */
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.comp_img, .user_img {
-    font-size: 5em;
-}
+.imgs{
+    width: 100px;
 
-span#computer_choice, span#user_choice {
-    display: block;
-    margin: 8px 0px;
-}
-
-.stone_imgfluid {
-    background-color: #6dabab;
-    width: 200px;
-    outline: none;
-    border: none;
-}
-
- .boxes {
-    border: none;
-    outline: none;
-    width: 0;
 }
