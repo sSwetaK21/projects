@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+nav ul {
+    list-style-type: none;
+    color: #00ffff;
+}
+
+/* background colors :
+  blue:  #00FFFF
+  green: #00FF66
+    red : #FF0000
+    pink:#FF00FF
+    purple:#9D00FF
+    yellow:#FFFF00
+
+ */
