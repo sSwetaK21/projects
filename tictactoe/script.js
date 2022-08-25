@@ -20,20 +20,6 @@ function checkWin(){
 
 // main logic
 
-// let boxes = document.getElementsByClassName("box");
-// Array.from(boxes).forEach(ele=>{
-//     let boxtext = ele.querySelector(".boxtext");
-//     ele.addEventListener("click", ()=>{
-//         if(boxtext.innertext === ""){
-//             boxtext.innerText = turn;
-//             turn =changeTurn();
-//             turn_audio.play();
-//             // if (!isgameover){
-//                 document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-//             // } 
-//         }
-//     })
-// })
 
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
