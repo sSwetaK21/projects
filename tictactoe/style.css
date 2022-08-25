@@ -31,7 +31,7 @@ header {
 }
 .gamecont {
     display: flex;
-    /* align-items: center; */
+    flex-wrap: wrap;
     justify-content: center;
 }
 nav {
@@ -79,6 +79,9 @@ nav ul {
 }
 .info_x {
     margin: 10px 0px;
+}
+img.img_gif {
+    width: 0px;
 }
 /* background colors :
   blue:  #00FFFF
