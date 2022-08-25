@@ -48,6 +48,7 @@ nav ul {
     display: grid;
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3,10vw);
+    position: relative;
 }
 .box {
     /* border: 1px solid white; */
@@ -62,7 +63,7 @@ nav ul {
 
 }
 .gameinfo{
-    margin-left: 20px;
+    margin-left: 5vw;
 
 }
 .title {
@@ -73,16 +74,41 @@ nav ul {
     padding: 10px 15px;
     border-radius: 25px;
     background-color: #00FF66;
-    margin: 0px 12px;
+    margin: 12px 2px;
     color: white;
     font-weight: 800;
 }
 .info_x {
     margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.info {
+    font-size: 3vw;
 }
 img.img_gif {
     width: 0px;
+    transition: width 1s ease-in-out;
+
 }
+
+
+.line{
+    position: absolute;
+    background-color: #00FF66;
+    width: 0;
+    height: 3px;
+
+}
+
+
+
+
+
+
+
+
 /* background colors :
   blue:  #00FFFF
   green: #00FF66
