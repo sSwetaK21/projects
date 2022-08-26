@@ -53,8 +53,14 @@ Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext');
     element.addEventListener('click', () => {
         if (boxtext.innerText === '') {
-            boxtext.innerText = turn;
             turn = changeTurn();
+            boxtext.innerText = turn;
+            if(turn === "X"){
+                boxtext.style.color = "red"
+            }else{
+                boxtext.style.color = "green"
+
+            }
             turn_audio.play();
             checkWin();
             if (!isgameover) {
